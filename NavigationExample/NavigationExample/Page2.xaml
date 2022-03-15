@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NavigationExample.Page2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Choose your order"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Grid>
+
+                <Button x:Name="Fries" ClassId="Fries" Clicked="AddToKart" Text="Fries" HorizontalOptions="Fill" Grid.Column="0" Grid.Row="0" ></Button>
+
+                <Button x:Name="Curry" Clicked="AddToKart" Text="Curry" HorizontalOptions="Fill" Grid.Column="1" Grid.Row="0" ></Button>
+
+                <Button x:Name="Cheese" Clicked="AddToKart" Text="Cheese" HorizontalOptions="Fill" Grid.Column="2" Grid.Row="0" ></Button>
+    
+
+
+            </Grid>
+            <Label x:Name="total" Text="Total"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
