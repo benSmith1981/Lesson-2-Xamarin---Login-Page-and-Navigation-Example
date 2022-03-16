@@ -10,16 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace NavigationExample
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page1 : ContentPage
+    public partial class OrderPage : ContentPage
     {
-        public Page1()
+        public OrderPage()
         {
             InitializeComponent();
-        }
-
-        async void OnNextPageButtonClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Page2());
         }
     }
 }
